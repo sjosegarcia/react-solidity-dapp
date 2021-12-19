@@ -8,6 +8,6 @@ contract Gas {
     //gas price is how much ether you are willing to pay PER gas
 
     function forever() public { //loop until all the gas is spent and txn fails
-        while (true) i += 1;
+        while (true) i += 1; //Do not write unbounded loops to not hit the gas limit
     }
 }
