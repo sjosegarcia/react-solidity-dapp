@@ -1,0 +1,7 @@
+node_modules
+artifacts
+cache
+coverage
+tailwind.config.js
+hardhat.config.js
+.eslintrc.js
