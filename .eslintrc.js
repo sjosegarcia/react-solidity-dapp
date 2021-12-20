@@ -13,7 +13,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
   ],
-  parser: "@typescript-eslint",
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     project: [
       "tsconfig.json",
@@ -31,6 +31,7 @@ module.exports = {
         "parser": "typescript",
       }
     ],
+    "no-use-before-define": "off",
     "no-unused-vars": "off",
     "no-console": "off",
     "func-names": "off",
