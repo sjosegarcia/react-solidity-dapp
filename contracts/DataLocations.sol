@@ -1,6 +1,13 @@
 pragma solidity ^0.8.10;
 
 contract DataLocations {
+    /**
+        stoage - state variable (stored on blockchain)
+
+        memory - variable on a stack (like when a function is called, that variable is in scope)
+
+        calldata - data location that contains function args only available for external functions.
+     */
     uint[] public arr;
     mapping(uint => address) public map;
 

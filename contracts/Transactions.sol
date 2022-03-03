@@ -51,4 +51,6 @@ contract Transactions {
 
     Lower hashrate miners will produce close to accurate blocktime
 
+    https://github.com/ethereumbook/ethereumbook/blob/develop/09smart-contracts-security.asciidoc#preventative-techniques-11
+
  */
