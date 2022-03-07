@@ -7,7 +7,7 @@ contract FavoriteNumber {
         uint256 favoriteNumber;
     }
 
-    mapping(address => Person) public addressToPerson;
+    mapping(address => Person) private addressToPerson;
 
     function store(string memory name, uint256 favoriteNumber) public {
         require(bytes(name).length > 0, "Please provide a nanme");
