@@ -2,16 +2,16 @@ pragma solidity ^0.8.10;
 
 contract Struct {
 
-    struct Struct {
+    struct Structss {
         string text;
     }
 
-    Struct[] public structs;
+    Structss[] public structs;
 
     function create(string memory _text) public { //Three ways to initialize a struct
-        structs.push(Struct(_text));
-        structs.push(Struct({text: _text}));
-        Struct memory structz;
+        structs.push(Structss(_text));
+        structs.push(Structss({text: _text}));
+        Structss memory structz;
         structz.text = _text;
         structs.push(structz);
     }
