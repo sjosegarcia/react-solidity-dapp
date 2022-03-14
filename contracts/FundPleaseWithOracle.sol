@@ -1,7 +1,11 @@
 pragma solidity ^0.8.10;
 
-contract FundPlease {
+import "@chainlink/contracts/src/0.6.0/interfaces/AggregatorV3Interface.sol";
+import "@chainlink/contracts/src/0.6.0/vendor/SafeMathChainlink.sol";
 
+contract FundPleaseWithOracle {
+
+    using SafeMathChainlink for uint256;
     mapping(address => uint256) public addressToFundAmount;
     address[] private funders;
     address private owner;
